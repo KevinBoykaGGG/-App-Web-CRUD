@@ -1,0 +1,28 @@
+﻿
+@{
+	var clientes = ViewBag.Listado;
+}
+
+<table class="table table-bordered" >
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Edad</th>
+			<th>Correo</th>
+			<th>Telefono</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		@foreach(var item in clientes)
+		{
+		<tr>
+			<td>@item.Nombre</td>
+			<td>@item.Edad</td>
+			<td>@item.Correo</td>
+			<td>@item.Telefono</td>
+		</tr>
+		}
+	</tbody>
+</table>
+
